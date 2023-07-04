@@ -54,10 +54,6 @@ Contributions to this project are welcome and appreciated. If you have any bug f
 5. Push your branch to your forked repository.
 6. Open a pull request, describing your changes in detail.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code as permitted by the license.
-
 ## Acknowledgements
 
 We would like to express our gratitude to the following resources and libraries that have been instrumental in the development of this Pokémon app:
