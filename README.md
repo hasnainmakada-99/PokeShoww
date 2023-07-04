@@ -11,15 +11,19 @@ Welcome to the PokeShoww App repository! This Flutter-based mobile application a
 ## Screenshots
 
 **Home Screen**
+
 ![Home Screen](https://github.com/hasnainmakada-99/PokeShoww/assets/82728823/ada08ee1-91ef-4d52-bbb7-9b5b3eb92414)
 
 **PokeMon Detail Screen**
+
 ![Pokémon Details Screen](https://github.com/hasnainmakada-99/PokeShoww/assets/82728823/d6e4c9de-fff9-4ae0-9d76-cf64ec01b2be)
 
 **Favorite Pokemons**
+
 ![faviourite Pokemon](https://github.com/hasnainmakada-99/PokeShoww/assets/82728823/efc4a2f0-ec39-4afb-be52-13b1d20cda67)
 
 **Sidebar of the app**
+
 ![Drawer](https://github.com/hasnainmakada-99/PokeShoww/assets/82728823/05a90988-d582-4e17-a383-beabb22d6a5d)
 
 ## Technologies Used
