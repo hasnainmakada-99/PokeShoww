@@ -40,3 +40,20 @@ final pokeHubProvider = Provider<PokeHub>(
     }
   },
 );
+
+class FavoritePokemonsNotifier extends StateNotifier<List<Pokemon>> {
+  FavoritePokemonsNotifier() : super([]);
+
+  void toggleFavorite(Pokemon pokemon) {
+    if (state.contains(pokemon)) {
+      state = List.from(state)..remove(pokemon);
+    } else {
+      state = List.from(state)..add(pokemon);
+    }
+  }
+}
+
+final favoritePokemonsProvider =
+    StateNotifierProvider<FavoritePokemonsNotifier, List<Pokemon>>((ref) {
+  return FavoritePokemonsNotifier();
+});

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:poke_showw/models/PokeHub.dart';
 
+import '../state/fetchapi.dart';
+
 class PokemonDetail extends ConsumerStatefulWidget {
   final Pokemon pokemon;
   const PokemonDetail({super.key, required this.pokemon});
@@ -105,6 +107,18 @@ class _PokemonDetailState extends ConsumerState<PokemonDetail> {
             ),
           )
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          ref
+              .read(favoritePokemonsProvider.notifier)
+              .toggleFavorite(widget.pokemon);
+        },
+        child: Icon(
+          widget.pokemon.isFavorite
+              ? Icons.favorite_sharp
+              : Icons.favorite_border,
+        ),
       ),
     );
   }

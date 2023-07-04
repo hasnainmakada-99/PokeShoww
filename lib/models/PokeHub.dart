@@ -38,7 +38,7 @@ class Pokemon {
   List<double>? multipliers;
   List<String>? weaknesses;
   List<NextEvolution>? nextEvolution;
-  //List<PrevEvolution>? prevEvolution;
+  bool isFavorite = false; // Add this property
 
   Pokemon({
     this.id,
@@ -57,6 +57,7 @@ class Pokemon {
     this.multipliers,
     this.weaknesses,
     this.nextEvolution,
+    this.isFavorite = false,
   });
 
   Pokemon.fromJson(Map<String, dynamic> json) {
